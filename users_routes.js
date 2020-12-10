@@ -15,11 +15,11 @@ router.get('/error',
   }));
 
 
-router.get('/successful-response',
+router.get('/success',
   errorHandler(async (req, res) => {
     // This is a good response in case you want to see a successful case response
     // This could be a async call, for example a call to our controllers that are connected to a database or a service, that might throw errors
-    const response = [{name: "Linda Gutiérrez", age: 24}, {name: "Alan Brito", age: 22}, {name: "Alba Bosa", age: 31}]
+    const response = [{name: "Elsa Capunta", age: 40}, {name: "Alan Brito", age: 22}, {name: "Alba Bosa", age: 31}]
     res.send(response)
 }));
 
