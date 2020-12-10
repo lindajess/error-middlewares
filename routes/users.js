@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { errorHandler } = require('./error_middlewares');
-const CustomError = require('./error_class')
+const { errorHandler } = require('../middlewares/error');
+const CustomError = require('../classes/error')
 
 
 router.get('/error',

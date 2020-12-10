@@ -1,6 +1,6 @@
 const express = require('express');
-const { errorResponseFormatter } = require('./error_middlewares');
-const users = require('./users_routes')
+const { errorResponseFormatter } = require('./middlewares/error');
+const users = require('./routes/users')
 
 const PORT = 3000
 
